@@ -1,30 +1,42 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title> My cooked website </title>
     <style>
-      img(
-        width:600
-        height:auto
+      img{
+        width:600;
+        height:auto;
+      }
         h1{
+          color: green;
+
         }
     </style>
   </head>
   <body>
     <h1> My Cooked Website</h1>
     <p> I think im cooked </p>
-    <img src=>
+    <img src=https://lacvets.com/wp-content/uploads/2023/01/what-is-a-cats-lifespan-lakeland-fl-300x200.jpg>
     <blockquote> "Im so cooked no matter what" </blockquote>
+    <button onclick="changeQuote()">Change Quote</button>
+
     <script>
       var index = 0;
       function changeQuote(){
       var quotes= [
-        "I've been so cooked ngl"
-        "I cant be uncooked"
+        '"Ive been so cooked ngl"',
+        '"I cant be uncooked"'
         ];
         var blockquote = document.queryselector("blockquote")
-        
-      }
+        blockquote.innerHTML = quotes[index];
+        }
+          index++;
+          if (index >= 2) {
+              index = 0;
+                  
+                }
+              
+            
     </script>
   </body>
 </html>
